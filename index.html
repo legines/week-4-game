@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework 4: Crystals Collector</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+  <header>
+      <div class="title">
+        <h1 class="name">Crystals Collector!</h1>
+      </div>
+  </header>
+
+  <div class="content clearfix">
+      <section id="info">
+        
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <br>
+        <p></p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+        <br>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <br>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+  
+      </section>
+  
+      <aside id="random">
+        <p id ="ranNum"></p>
+      </aside>
+
+      <aside id="counter">
+        <p class="win_count">Wins</p>
+        <br>
+        <p class="lose_count">Losses</p>
+      </aside>
+
+      <div class="btn-block" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+        <button type="button" class="btn btn-default">Right</button>
+      </div>
+
+      <aside id="score_info">
+        <h2>Your Total Score Is: </h2>
+      </aside>
+
+      <aside id="total">
+        <p id="sum">6</p>
+      </aside>
+
+      
+  </div>
+
+
+   <!-- Latest compiled and minified JavaScript. JQuery first then JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+</body>
+
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</html>

@@ -1,0 +1,80 @@
+/* sizes everything from withing a box. breaks code if deleted */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: url("../images/dust_back.png") repeat;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  overflow: auto;
+}
+
+.content {
+  margin-left: 10px;
+}
+
+/* Title Styling */
+.title {
+  background: #FCFFF5;
+  width: 285px;
+  margin: 15px 0 0 10px;
+}
+
+.title h1 {
+  font-size: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #777;
+}
+
+/* Game Info Box */
+#info {
+  background: #D1DBBD;
+  width: 450px;
+  padding: 20px 5px 100px 5px;
+}
+
+/* Number Gen and Counter */
+#counter, #random {
+  float: left;
+}
+
+#random {
+  padding: 5px 40px 61px 5px;
+  background: #91AA9D;
+  width: 250px;
+  margin-right: 15px;
+}
+
+#counter {
+  width: 110px;;
+  padding: 10px 5px 24px 5px;
+  background: #3E606F;
+  color: #ccc;
+}
+
+/* Button property prevents floating left */
+.btn-block {
+  overflow: auto;
+}
+
+/* Score Blocks */
+#score_info, #total {
+  background: #193441;
+  width: 250px;
+  margin-right: 15px;
+  color: #ccc;
+}
+
+#score_info {
+  padding: 5px 10px 5px 5px;
+}
+
+#total {
+  padding: 5px 40px 61px 5px;
+}
+
+/* Adjusting margins for all elements */
+.title, .btn-block, #info, #counter, #random, #score_info {
+  margin-bottom: 15px;
+}
