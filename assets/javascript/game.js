@@ -7,10 +7,10 @@ $(document).ready(function(){
 
   // Generates random number to guess
   //Math.floor(Math.random()*(max-min+1)+min)
-  var Random=Math.floor(Math.random()*102+19)
+  var random=Math.floor(Math.random()*102+19)
   
   // Display random number
-  $("#ranNum").text(Random);
+  $("#ranNum").text(random);
   $("#sum").text(score);
   
   // Assign random number to crystals
@@ -22,62 +22,67 @@ $(document).ready(function(){
   // Crystal click events
   $(".brk").on ("click", function(){
     score = score + resource1;
-    console.log("New score= " + score);
+    console.log("Your new score is " + score);
     $("#sum").text(score); 
-          //Win-Lose Condition
-        if (score == Random){
-          winner();
-        }
-        else if ( score > Random){
-          loser();
-        }   
+    //Win-Lose condition repeated for all crystals
+    if (score == random){
+      winner();
+    }
+    else if ( score > random){
+      loser();
+    }   
   });  
+
   $(".grn").on ("click", function(){
     score = score + resource2;
-    console.log("New score= " + score);
+    console.log("Your new score is " + score);
     $("#sum").text(score); 
-        if (score == Random){
-          winner();
-        }
-        else if ( score > Random){
-          loser();
-        } 
-  });  
+
+    if (score == random){
+      winner();
+    }
+    else if ( score > random){
+      loser();
+    } 
+  }); 
+
   $(".ore").on ("click", function(){
     score = score + resource3;
-    console.log("New score= " + score);
+    console.log("Your new score is " + score);
     $("#sum").text(score);
 
-          if (score == Random){
-          winner();
-        }
-        else if ( score > Random){
-          loser();
-        } 
+    if (score == random){
+    winner();
+    }
+    else if ( score > random){
+      loser();
+    } 
   });  
+
   $(".shp").on ("click", function(){
     score = score + resource4;
-    console.log("New score= " + score);
+    console.log("Your new score is " + score);
     $("#sum").text(score); 
-      
-          if (score == Random){
-          winner();
-        }
-        else if ( score > Random){
-          loser();
-        }
+
+    if (score == random){
+    winner();
+    }
+    else if ( score > random){
+      loser();
+    }
   });
+
   $(".wod").on ("click", function(){
     score = score + resource4;
-    console.log("New score= " + score);
+    console.log("Your new score is " + score);
     $("#sum").text(score); 
-      
-          if (score == Random){
-          winner();
-        }
-        else if ( score > Random){
-          loser();
-        }
+    
+    if (score == random){
+    winner();
+    }
+    else if ( score > random){
+      loser();
+    }
   });
 
   // Win/Lose Counters
@@ -87,7 +92,7 @@ $(document).ready(function(){
       $(".win_count").text(wins);
       reset();
     }
-    // Display losses
+    
     function loser(){
     alert ("You lose! Good day sir!");
       loss++;
@@ -97,9 +102,9 @@ $(document).ready(function(){
 
   // Restart game
   function reset(){
-    Random=Math.floor(Math.random()*102+19);
-    console.log(Random)
-    $("#ranNum").text(Random);
+    random=Math.floor(Math.random()*102+19);
+    console.log(random)
+    $("#ranNum").text(random);
     resource1= Math.floor(Math.random()*12+1);
     resource2= Math.floor(Math.random()*12+1);
     resource3= Math.floor(Math.random()*12+1);
@@ -107,7 +112,5 @@ $(document).ready(function(){
     score= 0;
     $("#sum").text(score);
     } 
-
-
  
 }); 
