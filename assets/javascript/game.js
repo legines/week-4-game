@@ -6,10 +6,12 @@ $(document).ready(function(){
   var loss = 0;
 
   // Generates random number to guess
+  //Math.floor(Math.random()*(max-min+1)+min)
   var Random=Math.floor(Math.random()*102+19)
   
   // Display random number
   $("#ranNum").text(Random);
+  $("#sum").text(score);
   
   // Assign random number to crystals
   var resource1= Math.floor(Math.random()*12+1);

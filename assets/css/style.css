@@ -17,13 +17,13 @@ body{
 .title {
   background: #FCFFF5;
   width: 350px;
-  margin: 15px 0 0 10px;
+  margin: 6px 0 0 10px;
 }
 
 .title h1 {
   font-size: 35px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #777;
 }
 
@@ -40,7 +40,7 @@ body{
 }
 
 #random {
-  padding: 5px 40px 61px 5px;
+  padding: 5px 40px 40px 5px;
   background: #91AA9D;
   width: 250px;
   margin-right: 15px;
@@ -48,7 +48,7 @@ body{
 
 #counter {
   width: 110px;;
-  padding: 10px 5px 24px 5px;
+  padding: 10px 5px 16px 5px;
   background: #3E606F;
   color: #ccc;
 }
@@ -59,7 +59,7 @@ body{
 
 /* Button property prevents floating left */
 .btn-block {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .btn-outline-light {
@@ -81,8 +81,8 @@ body{
 }
 
 #total {
-  padding: 5px 40px 61px 5px;
-  margin-bottom: 30px;
+  padding: 5px 40px 32px 5px;
+  /* margin-bottom: 5px; */
 }
 
 #total p {
@@ -91,5 +91,5 @@ body{
 
 /* Adjusting margins for all elements */
 .title, .btn-block, #info, #counter, #random, #score_info {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
