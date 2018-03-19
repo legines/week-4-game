@@ -16,7 +16,7 @@ body{
 /* Title Styling */
 .title {
   background: #FCFFF5;
-  width: 285px;
+  width: 350px;
   margin: 15px 0 0 10px;
 }
 
@@ -53,9 +53,19 @@ body{
   color: #ccc;
 }
 
+#random p {
+  font-size: 30px;
+}
+
 /* Button property prevents floating left */
 .btn-block {
   overflow: auto;
+}
+
+.btn-outline-light {
+  border: 0px solid transparent;
+  background-color: transparent;
+  outline: none;
 }
 
 /* Score Blocks */
@@ -72,6 +82,11 @@ body{
 
 #total {
   padding: 5px 40px 61px 5px;
+  margin-bottom: 30px;
+}
+
+#total p {
+  font-size: 30px;
 }
 
 /* Adjusting margins for all elements */
