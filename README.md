@@ -1,7 +1,9 @@
 # Resource Collector!
 
-**Instructions**
-The player will have to guess the answer:
+[Click me to play the game](https://legines.github.io/week-4-game/)  
+
+**Instructions**  
+1. The player will have to guess the answer.
 
 1. There will be four crystals displayed as buttons on the page.
 
@@ -15,5 +17,5 @@ The player will have to guess the answer:
 1. The player loses if their score goes above the random number.
 
 1. The game restarts whenever the player wins or loses.
-    1. When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+    * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
 
